@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="" src="js.js"></script>
+</head>
+<body>
+	<head>
+		<h1> Learn About the Classes </h1>
+    <h2>  The Account Class </h2>
+      <div class="ui segment"> <p class="Description"> An abstract class that outlines the architecture for a checking or savings account. </p>
+        </div>
+</head>			
+
+  	<button id="show-sidebar" class="ui secondary button">Menu</button>
+	
+<div class="sidenav">
+  <a href="tutorial.html">Tutorial</a>
+  <a href="account.html">Account</a>
+  <a href="checkingAccount.html">Checking Account</a>
+  <a href="savingsAccount.html">Savings Account</a>
+    <a href="IAccountManager.html">IAccountManager</a>
+ 
+    <a href="checkingAccountManager.html">CheckingAccountManager</a>
+    <a href="savingsAccountManager.html">SavingsAccountManager</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="reporter.html">Reporter</a>
+    <a href="OverdraftException.html">OverdraftException</a>
+
+  </div>
+	
+  
+  <div class="pusher">
+    <!-- Site content !-->
+  
+
+</div>
+<div class="main content">
+ 
+  <div class="ui segment">
+   <h3>Fields: </h3>
+    </div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            accountID
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        A unique identifier for each account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            Balance  
+        </div>
+      </h4></td>
+      <td>
+        The amount of money in an account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            accountType
+          
+        </div>
+      </h4></td>
+      <td>
+        Describes the account as "checking" or "savings" type account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            firstName
+         
+        </div>
+      </h4></td>
+      <td>
+        The first name of the account holder
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            lastName
+         
+        </div>
+      </h4></td>
+      <td>
+        The last name of the account holder
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  <div class="ui segment">
+    <h3>Methods: </h3>
+    <h4> <span> Black signifies a Getter or Setter |<label> Orange </label> signifies all other methods </span> </h4></div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Method</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr><td><h4 class="ui image header">
+        <div class="content" class='non-getter'> <label> IAccountManager </label> </div>
+      </h4></td>
+      <td> abstract method that is made concrete in the CheckingAccount and SavingsAccount classes</td> 
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            getAccountID
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        retrieves the accountID of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getBalance  
+        </div>
+      </h4></td>
+      <td>
+        retrieves the balance of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getAccountType
+          
+        </div>
+      </h4></td>
+      <td>
+        retrieves the account type of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getFirstName
+         
+        </div>
+      </h4></td>
+      <td>
+        retrieves the first name of the owner of a specific account
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getLastName
+         
+        </div>
+      </h4></td>
+      <td>
+        retrieves the last name of the owner of a specific account
+      </td>
+    </tr>
+
+
+      
+
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            setAccountID
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        updates the accountID of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setBalance  
+        </div>
+      </h4></td>
+      <td>
+        updates the balance of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setAccountType
+          
+        </div>
+      </h4></td>
+      <td>
+        updates the account type of a specific account
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setfirstName
+         
+        </div>
+      </h4></td>
+      <td>
+        updates the first name of the owner of a specific account
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setLastName
+         
+        </div>
+      </h4></td>
+      <td>
+        updates the last name of the owner of a specific account
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

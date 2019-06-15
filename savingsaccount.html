@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="" src="js.js"></script>
+</head>
+<body>
+	<head>
+		<h1> Learn About the Classes </h1>
+    <h2>  The SavingsAccount Class </h2>
+    <div class="ui segment"> <p class="Description"> A subclass of Account, which inherits its fields and methods, and also adds new fields and methods. </p>
+        </div>
+</head>			
+
+	
+<div class="sidenav">
+  <a href="tutorial.html">Tutorial</a>
+  <a href="account.html">Account</a>
+  <a href="checkingAccount.html">Checking Account</a>
+  <a href="savingsAccount.html">Savings Account</a>
+    <a href="IAccountManager.html">IAccountManager</a>
+ 
+    <a href="checkingAccountManager.html">CheckingAccountManager</a>
+    <a href="savingsAccountManager.html">SavingsAccountManager</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="reporter.html">Reporter</a>
+    <a href="OverdraftException.html">OverdraftException</a>
+
+  </div>
+
+	
+  
+  <div class="pusher">
+    <!-- Site content !-->
+  <div class="main content">
+ 
+  <div class="ui segment">
+    <h3>Fields: </h3>
+    </div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            minBalance
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        the minimum allowable balance of an account
+      </td>
+    </tr>
+     <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            currentMonthlyWithdrawals
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        the number of withdrawals made so far during the current month
+      </td>
+    </tr>
+     <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            maxMonthlyWithdrawals
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        the maximum allowable number of withdrawals during a given month
+      </td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+  <div class="ui segment">
+    <h3>Methods: </h3>
+    <h4> <span> Black signifies a Getter or Setter |<label> Orange </label> signifies all other methods </span> </h4></div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr><td><h4 class="ui image header">
+        <div class="content" class='non-getter'> <label> SavingsAccount(No arg) </label> </div>
+      </h4></td>
+      <td> An empty constructor for creating a savings account that sets default values for fields.</td> 
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+           <label> SavingsAccount </label>  
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        A constructor that takes in an accountID, first name and last name to create a savings account.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getSavingsAccountManager 
+        </div>
+      </h4></td>
+      <td>
+        creates a new savings account manager object, using an estalished savings account object
+      </td>
+    </tr>
+    <tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getMinBalance 
+        </div>
+      </h4></td>
+      <td>
+        returns the minimum allowable balance of an account object
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getCurrentMonthlyWithdrawals
+          
+        </div>
+      </h4></td>
+      <td>
+        returns the count of withdrawals made during the current month
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getMaximumMonthlyWithdrawals
+         
+        </div>
+      </h4></td>
+      <td>
+        returns the maximum allowable number of monthly withdrawals
+      </td>
+      <tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setMinBalance 
+        </div>
+      </h4></td>
+      <td>
+        updates the minimum allowable balance of an account object
+      </td>
+    </tr>
+    </tr>
+        <tr>
+              <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setCurrentMonthlyWithdrawals
+          
+        </div>
+      </h4></td>
+      <td>
+       updates the count of withdrawals made during the current month
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setMaximumMonthlyWithdrawals
+         
+        </div>
+      </h4></td>
+      <td>
+        updates the maximum allowable number of monthly withdrawals
+      </td>
+      <tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+           toString
+         
+        </div>
+      </h4></td>
+      <td>
+        defines what an instance of savings account will look like when printed to the console
+      </td>
+    </tr>
+    
+
+
+      
+
+    
+  
+  </tbody>
+</table>
+
+</div>
+
+
+
+
+</body>
+</html>

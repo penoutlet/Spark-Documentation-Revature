@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="" src="js.js"></script>
+</head>
+<body>
+	<head>
+		<h1> Learn About the Classes </h1>
+    <h2>  The CheckingAccount Class </h2>
+      <div class="ui segment"> <p class="Description"> A subclass of Account, which inherits its fields and methods, and also adds new fields and methods. </p>
+        </div>
+</head>			
+
+  	<button id="show-sidebar" class="ui secondary button">Menu</button>
+	
+<nav>
+<div class="sidenav">
+  <a href="tutorial.html">Tutorial</a>
+  <a href="account.html">Account</a>
+  <a href="checkingAccount.html">Checking Account</a>
+  <a href="savingsAccount.html">Savings Account</a>
+    <a href="IAccountManager.html">IAccountManager</a>
+ 
+    <a href="checkingAccountManager.html">CheckingAccountManager</a>
+    <a href="savingsAccountManager.html">SavingsAccountManager</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="reporter.html">Reporter</a>
+    <a href="OverdraftException.html">OverdraftException</a>
+
+  </div>
+	
+  
+  <div class="pusher">
+    <!-- Site content !-->
+  
+
+</div>
+<div class="main content">
+ 
+  <div class="ui segment">
+    <h3>Fields: </h3>
+    </div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+           overdraftFee
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        the cost of a withdrawal that exceeds the available balance in an account
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+  <div class="ui segment">
+    <h3>Methods: </h3>
+    <h4> <span> Black signifies a Getter or Setter |<label> Orange </label> signifies all other methods </span> </h4></div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr><td><h4 class="ui image header">
+        <div class="content" class='non-getter'> <label> CheckingAccount(No arg) </label> </div>
+      </h4></td>
+      <td> An empty constructor for creating a checking account that sets default values for fields.</td> 
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+           <label> CheckingAccount </label>  
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        A constructor that takes in a first name and last name to create a checking account.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getCheckingAccountManager 
+        </div>
+      </h4></td>
+      <td>
+        creates a new checking account manager object, using an estalished checking account object
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getOverdraftFee
+          
+        </div>
+      </h4></td>
+      <td>
+        returns the overdraft fee amount of $30
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            setOverdraftFee
+         
+        </div>
+      </h4></td>
+      <td>
+        updates the overdraft fee to a new value
+      </td>
+    </tr>
+        <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+           toString
+         
+        </div>
+      </h4></td>
+      <td>
+        defines what an instance of checking account will look like when printed to the console
+      </td>
+    </tr>
+
+
+      
+
+    
+  
+  </tbody>
+</table>
+
+
+
+</body>
+</html>

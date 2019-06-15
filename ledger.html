@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="" src="js.js"></script>
+</head>
+<body>
+	<head>
+		<h1> Learn About the Classes </h1>
+    <h2>  The Ledger Class </h2>
+    <div class="ui segment"> <p class="Description"> A class that stores multiple Account instances in a HashMap, of either checking or savings type, as well as methods for storing, creating, and retrieving Accounts from this HashMap. </p>
+        </div>
+</head>			
+
+  	<button id="show-sidebar" class="ui secondary button">Menu</button>
+	
+<div class="sidenav">
+  <a href="tutorial.html">Tutorial</a>
+  <a href="account.html">Account</a>
+  <a href="checkingAccount.html">Checking Account</a>
+  <a href="savingsAccount.html">Savings Account</a>
+    <a href="IAccountManager.html">IAccountManager</a>
+ 
+    <a href="checkingAccountManager.html">CheckingAccountManager</a>
+    <a href="savingsAccountManager.html">SavingsAccountManager</a>
+    <a href="ledger.html">Ledger</a>
+    <a href="reporter.html">Reporter</a>
+    <a href="OverdraftException.html">OverdraftException</a>
+
+  </div>
+	
+  
+  <div class="pusher">
+    <!-- Site content !-->
+  
+
+</div>
+<div class="main content">
+ 
+  <div class="ui segment">
+    <h3>Fields: </h3>
+    </div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Field</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            instance 
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        an instance of the ledger class
+      </td>
+    </tr>
+    
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+            accounts 
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        a HashMap holding the information of multiple accounts, with the accountID as keys and the account objects as values
+      </td>
+    </tr>
+    
+  </tbody>
+</table>
+
+  <div class="ui segment">
+    <h3>Methods: </h3>
+    <h4> <span> Black signifies a Getter or Setter |<label> Orange </label> signifies all other methods </span> </h4></div>
+    <table class="ui very basic collapsing celled table">
+  <thead>
+    <tr><th>Method</th>
+    <th>Description</th>
+  </tr></thead>
+  <tbody>
+    <tr><td><h4 class="ui image header">
+        <div class="content" class='non-getter'> <label> Ledger(No arg) </label> </div>
+      </h4></td>
+      <td> A constructor that creates a new Ledger object and assigns it to the "instance" field</td> 
+    </tr>
+    
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+           <label> store </label> 
+        </div>
+      </h4></td>
+      <td>
+        collects and stores a new Account in the accounts HashMap
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            <label> retrieve </label>          
+        </div>
+      </h4></td>
+      <td>
+        retrieves an Account with the given accountID
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            <label> createAccount</label>          
+        </div>
+      </h4></td>
+      <td>
+        creates an Account object of the given accountType, and assigns to it the firstName and lastName passed in
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getNextAccountID
+        </div>
+      </h4></td>
+      <td>
+        returns the String accountID that should belong to a newly created instance of Account
+      </td>
+    </tr>
+<tr>
+      <td>
+        <h4 class="ui image header">
+          <div class="content">
+            getAllAccounts
+        </div>
+      </h4></td>
+      <td>
+        returns an ArrayList containing all of the created Account objects
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="ui image header">  
+            <div class="content">
+           getInstance   
+        </div>
+        </h4>
+          
+      </h4></td>
+      <td>
+        retruns the instance field containing a new ledger object
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
